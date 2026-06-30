@@ -1,0 +1,256 @@
+:root {
+  --bg: #0c0c0d;
+  --bg-soft: #161618;
+  --bg-elev: #1f1f22;
+  --yellow: #ffd400;
+  --yellow-dim: #d8b400;
+  --text: #f5f5f5;
+  --text-dim: #9a9a9e;
+  --border: #2a2a2e;
+  --danger: #ff5252;
+  --radius-sm: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.player {
+  width: 300px;
+  max-width: 100%;
+  min-width: 260px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Cabeçalho */
+.top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  border-radius: 9px;
+  flex: 0 0 auto;
+  background: #000;
+}
+.titles {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.station {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 1.1;
+}
+.status {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.live-badge {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #000;
+  background: var(--yellow);
+  padding: 3px 6px;
+  border-radius: 999px;
+  flex: 0 0 auto;
+}
+
+/* Tocando agora */
+.now {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--yellow);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+}
+.now-label {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--yellow-dim);
+  margin-bottom: 4px;
+}
+.now-text {
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--text);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+/* Controles */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  color: var(--text);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.06s ease, background 0.15s ease, border-color 0.15s ease;
+}
+.btn:hover {
+  border-color: var(--yellow);
+}
+.btn:active {
+  transform: scale(0.94);
+}
+.btn:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 2px;
+}
+.btn svg {
+  display: block;
+}
+
+.btn-play {
+  width: 46px;
+  height: 46px;
+  background: var(--yellow);
+  border-color: var(--yellow);
+  flex: 0 0 auto;
+}
+.btn-play:hover {
+  background: #ffdf33;
+}
+.btn-play svg {
+  fill: #000;
+}
+
+.btn-mute {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+}
+.btn-mute svg {
+  fill: var(--text);
+}
+.btn-mute.is-muted {
+  border-color: var(--danger);
+}
+.btn-mute.is-muted svg {
+  fill: var(--danger);
+}
+
+/* Volume */
+.volume-wrap {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.volume {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.volume::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(
+    to right,
+    var(--yellow) 0%,
+    var(--yellow) var(--vol, 80%),
+    var(--bg-elev) var(--vol, 80%),
+    var(--bg-elev) 100%
+  );
+}
+.volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  margin-top: -4px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--yellow);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.volume:focus-visible::-webkit-slider-thumb {
+  outline: 2px solid var(--yellow);
+  outline-offset: 2px;
+}
+.volume-val {
+  font-size: 11px;
+  color: var(--text-dim);
+  width: 34px;
+  text-align: right;
+  flex: 0 0 auto;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Rodapé */
+.foot {
+  display: flex;
+  justify-content: center;
+}
+.link {
+  font-size: 11px;
+  color: var(--text-dim);
+  text-decoration: none;
+}
+.link:hover {
+  color: var(--yellow);
+}
+
+/* Pulsar suave no botão play quando está tocando */
+.player.is-playing .btn-play {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 212, 0, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(255, 212, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 212, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .player.is-playing .btn-play {
+    animation: none;
+  }
+  .btn {
+    transition: none;
+  }
+}

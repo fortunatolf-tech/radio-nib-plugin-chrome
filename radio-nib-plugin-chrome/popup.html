@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Rádio NIB</title>
+  </head>
+  <body>
+    <main class="player" id="player">
+      <header class="top">
+        <img class="logo" src="icons/icon48.png" alt="Rádio NIB" width="36" height="36" />
+        <div class="titles">
+          <h1 class="station">Rádio NIB</h1>
+          <p class="status" id="status">Pronto para tocar</p>
+        </div>
+        <span class="live-badge" id="liveBadge" hidden>AO VIVO</span>
+      </header>
+
+      <section class="now" aria-live="polite">
+        <span class="now-label">Tocando agora</span>
+        <p class="now-text" id="nowText" title="">—</p>
+      </section>
+
+      <section class="controls">
+        <button class="btn btn-play" id="playBtn" type="button" aria-label="Tocar" aria-pressed="false"></button>
+        <button class="btn btn-mute" id="muteBtn" type="button" aria-label="Silenciar" aria-pressed="false"></button>
+        <div class="volume-wrap">
+          <input
+            class="volume"
+            id="volume"
+            type="range"
+            min="0"
+            max="100"
+            step="1"
+            value="80"
+            aria-label="Volume"
+          />
+          <span class="volume-val" id="volumeVal">80%</span>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <a
+          class="link"
+          id="openPage"
+          href="https://radio.nerdsinblack.com.br/public/radionib"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Abrir página da rádio ↗</a
+        >
+      </footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
