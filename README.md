@@ -7,7 +7,7 @@
 ![Feito para Chrome](https://img.shields.io/badge/Chrome-116%2B-FFD400?style=flat-square&labelColor=0c0c0d)
 
 <p align="center">
-  <img src="docs/preview.png" alt="Prévia do mini player" width="320">
+  <img src="/radio-nib-plugin-chrome/docs/preview.png" alt="Prévia do mini player" width="320">
 </p>
 
 ---
