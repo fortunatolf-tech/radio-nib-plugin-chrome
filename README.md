@@ -28,7 +28,7 @@
 
 **Nunca mexeu com extensões?** Sem problema — o guia abaixo é feito para iniciantes, passo a passo:
 
-➡️ **[Como instalar (guia para iniciantes)](docs/INSTALACAO.md)**
+➡️ **[Como instalar (guia para iniciantes)](/radio-nib-plugin-chrome/docs/INSTALACAO.md)**
 
 Resumão para quem já tem prática:
 
@@ -44,12 +44,12 @@ Resumão para quem já tem prática:
 
 | Guia | Para quê |
 |------|----------|
-| 📥 [Instalação](docs/INSTALACAO.md) | Instalar a extensão do zero, sem saber programar. |
-| 🧠 [Como funciona](docs/COMO-FUNCIONA.md) | Entender as "peças" da extensão em linguagem simples. |
-| 🛠️ [Adicionar funcionalidades](docs/ADICIONAR-FUNCIONALIDADES.md) | Tutoriais prontos: capa do álbum, atalhos, histórico e mais. |
-| 🎨 [Personalizar](docs/PERSONALIZAR.md) | Trocar cores, ícones, nome e até a estação de rádio. |
-| 🩺 [Solução de problemas](docs/SOLUCAO-DE-PROBLEMAS.md) | "Não toca", "nome não aparece" e outros perrengues. |
-| 🌍 [Publicar e compartilhar](docs/PUBLICAR.md) | Como distribuir para outras pessoas. |
+| 📥 [Instalação](/radio-nib-plugin-chrome/docs/INSTALACAO.md) | Instalar a extensão do zero, sem saber programar. |
+| 🧠 [Como funciona](/radio-nib-plugin-chrome/docs/COMO-FUNCIONA.md) | Entender as "peças" da extensão em linguagem simples. |
+| 🛠️ [Adicionar funcionalidades](/radio-nib-plugin-chrome/docs/ADICIONAR-FUNCIONALIDADES.md) | Tutoriais prontos: capa do álbum, atalhos, histórico e mais. |
+| 🎨 [Personalizar](/radio-nib-plugin-chrome/docs/PERSONALIZAR.md) | Trocar cores, ícones, nome e até a estação de rádio. |
+| 🩺 [Solução de problemas](/radio-nib-plugin-chrome/docs/SOLUCAO-DE-PROBLEMAS.md) | "Não toca", "nome não aparece" e outros perrengues. |
+| 🌍 [Publicar e compartilhar](/radio-nib-plugin-chrome/docs/PUBLICAR.md) | Como distribuir para outras pessoas. |
 
 ---
 
@@ -65,14 +65,14 @@ radio-nib-plugin-chrome/
 └── docs/                # Toda a documentação (você está aqui!)
 ```
 
-Quer entender o que cada peça faz? Veja **[Como funciona](docs/COMO-FUNCIONA.md)**.
+Quer entender o que cada peça faz? Veja **[Como funciona](/radio-nib-plugin-chrome/docs/COMO-FUNCIONA.md)**.
 
 ---
 
 ## 🤝 Quer contribuir?
 
 Toda ajuda é bem-vinda — desde corrigir um texto até criar um botão novo.
-Comece pelo guia **[Adicionar funcionalidades](docs/ADICIONAR-FUNCIONALIDADES.md)**, que ensina a mexer no código com exemplos copiáveis.
+Comece pelo guia **[Adicionar funcionalidades](/radio-nib-plugin-chrome/docs/ADICIONAR-FUNCIONALIDADES.md)**, que ensina a mexer no código com exemplos copiáveis.
 
 1. Faça um *fork* (cópia) do repositório.
 2. Crie uma branch: `git checkout -b minha-novidade`.
